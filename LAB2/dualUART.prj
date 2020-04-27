@@ -1,0 +1,6 @@
+vhdl work "UART_Tx.vhd"
+vhdl work "UART_Rx.vhd"
+vhdl work "UART_FSM.vhd"
+vhdl work "UART.vhd"
+vhdl work "real_debounce.vhd"
+vhdl work "dualUART.vhd"

@@ -1,0 +1,10 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/vpattan1/Downloads/lab3/Test_dualUART_isim_par.exe -prj C:/Users/vpattan1/Downloads/lab3/Test_dualUART_par.prj work.Test_dualUART 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/vpattan1/Downloads/lab3/netgen/par/dualUART_timesim.vhd" into library work
+Parsing VHDL file "C:/Users/vpattan1/Downloads/lab3/Test_dualUART.vhd" into library work
+Starting static elaboration
+ERROR:HDLCompiler:244 - "C:/Users/vpattan1/Downloads/lab3/Test_dualUART.vhd" Line 43: Binding entity dualuart does not have generic debouncedelay
+ERROR:Simulator:777 - Static elaboration of top level VHDL design unit test_dualuart in library work failed

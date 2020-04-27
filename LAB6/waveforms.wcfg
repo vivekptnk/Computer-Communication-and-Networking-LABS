@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/ise_projects/lab6/Test_Error_Detect_Demo_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_error_detect_demo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">Test Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_error_detect_demo/testsig_data" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">testsig_data</obj_property>
+         <obj_property name="ObjectShortName">testsig_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/testsig_error_frame" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">testsig_error_frame</obj_property>
+         <obj_property name="ObjectShortName">testsig_error_frame</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/testsig_data_with_errors" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">testsig_data_with_errors</obj_property>
+         <obj_property name="ObjectShortName">testsig_data_with_errors</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/testsig_error_detect" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">testsig_error_detect</obj_property>
+         <obj_property name="ObjectShortName">testsig_error_detect</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/testsig_bit_errors" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">testsig_bit_errors</obj_property>
+         <obj_property name="ObjectShortName">testsig_bit_errors</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group54" type="group">
+      <obj_property name="label">frame error gen </obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/error_pattern" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">error_pattern[7:0]</obj_property>
+         <obj_property name="ObjectShortName">error_pattern[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/error_mode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">error_mode</obj_property>
+         <obj_property name="ObjectShortName">error_mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/data_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in</obj_property>
+         <obj_property name="ObjectShortName">data_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/dclk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in</obj_property>
+         <obj_property name="ObjectShortName">dclk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in</obj_property>
+         <obj_property name="ObjectShortName">frame_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/bit_errors" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_errors</obj_property>
+         <obj_property name="ObjectShortName">bit_errors</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/data_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out</obj_property>
+         <obj_property name="ObjectShortName">data_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/frame_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_out</obj_property>
+         <obj_property name="ObjectShortName">frame_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/frame_error" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_error</obj_property>
+         <obj_property name="ObjectShortName">frame_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/gen_error" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">gen_error</obj_property>
+         <obj_property name="ObjectShortName">gen_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/error_pattern_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">error_pattern_reg[14:0]</obj_property>
+         <obj_property name="ObjectShortName">error_pattern_reg[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/rbg_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rbg_out</obj_property>
+         <obj_property name="ObjectShortName">rbg_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/error_bit_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">error_bit_reg[14:0]</obj_property>
+         <obj_property name="ObjectShortName">error_bit_reg[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/load_error_bit_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_error_bit_reg</obj_property>
+         <obj_property name="ObjectShortName">load_error_bit_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/shift_error_bit_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_error_bit_reg</obj_property>
+         <obj_property name="ObjectShortName">shift_error_bit_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/frame_error_i" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_error_i</obj_property>
+         <obj_property name="ObjectShortName">frame_error_i</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_error_detect_demo/uut/Frame_Error/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

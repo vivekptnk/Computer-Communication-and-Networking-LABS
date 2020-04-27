@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/vpattan1/Downloads/lab3/Test_dualUART_isim_par.exe" -prj "C:/Users/vpattan1/Downloads/lab3/Test_dualUART_par.prj" "work.Test_dualUART" 

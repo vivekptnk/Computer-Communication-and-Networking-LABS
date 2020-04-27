@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vpattan1/Downloads/lab3/Test_dualUART_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_dualuart" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">Test Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rxd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_a</obj_property>
+         <obj_property name="ObjectShortName">rxd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rxd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_b</obj_property>
+         <obj_property name="ObjectShortName">rxd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/xmt_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xmt_a</obj_property>
+         <obj_property name="ObjectShortName">xmt_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/sw" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sw[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/txd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_a</obj_property>
+         <obj_property name="ObjectShortName">txd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/txd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_b</obj_property>
+         <obj_property name="ObjectShortName">txd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/led" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">led[7:0]</obj_property>
+         <obj_property name="ObjectShortName">led[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/txd_a_nrz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_a_nrz</obj_property>
+         <obj_property name="ObjectShortName">txd_a_nrz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rxd_a_nrz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_a_nrz</obj_property>
+         <obj_property name="ObjectShortName">rxd_a_nrz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group47" type="group">
+      <obj_property name="label">ManEncDec_A</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/nrz_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_in</obj_property>
+         <obj_property name="ObjectShortName">nrz_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/manout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manout</obj_property>
+         <obj_property name="ObjectShortName">manout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/manin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin</obj_property>
+         <obj_property name="ObjectShortName">manin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/nrz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out</obj_property>
+         <obj_property name="ObjectShortName">nrz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/clkdiv" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv[8:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/rclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rclk</obj_property>
+         <obj_property name="ObjectShortName">rclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_A/bauddivide" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bauddivide[8:0]</obj_property>
+         <obj_property name="ObjectShortName">bauddivide[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group57" type="group">
+      <obj_property name="label">ManEncDec_B</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/nrz_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_in</obj_property>
+         <obj_property name="ObjectShortName">nrz_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/manout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manout</obj_property>
+         <obj_property name="ObjectShortName">manout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/manin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin</obj_property>
+         <obj_property name="ObjectShortName">manin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/nrz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out</obj_property>
+         <obj_property name="ObjectShortName">nrz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/clkdiv" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv[8:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv[8:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/rclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rclk</obj_property>
+         <obj_property name="ObjectShortName">rclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/MED_B/bauddivide" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bauddivide[8:0]</obj_property>
+         <obj_property name="ObjectShortName">bauddivide[8:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

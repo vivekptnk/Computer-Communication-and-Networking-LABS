@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "U:/359 Labs/lab4/Test2_CRC_isim_beh.exe" -prj "U:/359 Labs/lab4/Test2_CRC_beh.prj" "work.Test2_CRC" 

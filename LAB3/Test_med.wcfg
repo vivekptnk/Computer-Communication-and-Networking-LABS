@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vpattan1/Downloads/lab3/Test_med_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_med" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="group9" type="group">
+      <obj_property name="label">Test Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_med/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/nrz_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_in</obj_property>
+         <obj_property name="ObjectShortName">nrz_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/manin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin</obj_property>
+         <obj_property name="ObjectShortName">manin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/nrz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out</obj_property>
+         <obj_property name="ObjectShortName">nrz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/manout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manout</obj_property>
+         <obj_property name="ObjectShortName">manout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/rdata_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">rdata_period</obj_property>
+         <obj_property name="ObjectShortName">rdata_period</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">ManEncoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_med/uut/ManEncoder/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/nrz_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_in</obj_property>
+         <obj_property name="ObjectShortName">nrz_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/manout" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manout</obj_property>
+         <obj_property name="ObjectShortName">manout</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/manclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manclk</obj_property>
+         <obj_property name="ObjectShortName">manclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/manclk_sync" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manclk_sync</obj_property>
+         <obj_property name="ObjectShortName">manclk_sync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/en_sync_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_sync_reg</obj_property>
+         <obj_property name="ObjectShortName">en_sync_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/manchester_timer" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">manchester_timer[4:0]</obj_property>
+         <obj_property name="ObjectShortName">manchester_timer[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/sampling_ctr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sampling_ctr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">sampling_ctr[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/num_bits_sampled" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">num_bits_sampled[3:0]</obj_property>
+         <obj_property name="ObjectShortName">num_bits_sampled[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/nrz_hold_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_hold_reg</obj_property>
+         <obj_property name="ObjectShortName">nrz_hold_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/nrz_sync_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_sync_reg</obj_property>
+         <obj_property name="ObjectShortName">nrz_sync_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/next_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/processing_frame" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">processing_frame</obj_property>
+         <obj_property name="ObjectShortName">processing_frame</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/en_sampling_ctr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_sampling_ctr</obj_property>
+         <obj_property name="ObjectShortName">en_sampling_ctr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/clr_sampling_ctr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clr_sampling_ctr</obj_property>
+         <obj_property name="ObjectShortName">clr_sampling_ctr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/en_num_bits" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_num_bits</obj_property>
+         <obj_property name="ObjectShortName">en_num_bits</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/clr_num_bits" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clr_num_bits</obj_property>
+         <obj_property name="ObjectShortName">clr_num_bits</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/en_hold_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_hold_reg</obj_property>
+         <obj_property name="ObjectShortName">en_hold_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/set_hold_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">set_hold_reg</obj_property>
+         <obj_property name="ObjectShortName">set_hold_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/set_sync_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">set_sync_reg</obj_property>
+         <obj_property name="ObjectShortName">set_sync_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManEncoder/sync_nrz" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sync_nrz[4:0]</obj_property>
+         <obj_property name="ObjectShortName">sync_nrz[4:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group60" type="group">
+      <obj_property name="label">ManDecoder</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_med/uut/ManDecoder/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin</obj_property>
+         <obj_property name="ObjectShortName">manin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/nrz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out</obj_property>
+         <obj_property name="ObjectShortName">nrz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manclk_det" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manclk_det</obj_property>
+         <obj_property name="ObjectShortName">manclk_det</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manin_d1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin_d1</obj_property>
+         <obj_property name="ObjectShortName">manin_d1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manin_d2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin_d2</obj_property>
+         <obj_property name="ObjectShortName">manin_d2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manin_s14" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin_s14</obj_property>
+         <obj_property name="ObjectShortName">manin_s14</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/manin_s34" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin_s34</obj_property>
+         <obj_property name="ObjectShortName">manin_s34</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/nrz_out_reg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out_reg</obj_property>
+         <obj_property name="ObjectShortName">nrz_out_reg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/clkdiv" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv[5:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/bit_counter" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">bit_counter[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/next_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/data_frame" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_frame</obj_property>
+         <obj_property name="ObjectShortName">data_frame</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/clkdiv_init" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv_init[5:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv_init[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/clkdiv_14" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv_14[5:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv_14[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/clkdiv_34" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">clkdiv_34[5:0]</obj_property>
+         <obj_property name="ObjectShortName">clkdiv_34[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/decode_data_bit" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">decode_data_bit[5:0]</obj_property>
+         <obj_property name="ObjectShortName">decode_data_bit[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/end_of_bit" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">end_of_bit[5:0]</obj_property>
+         <obj_property name="ObjectShortName">end_of_bit[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_med/uut/ManDecoder/bits_in_frame" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">bits_in_frame</obj_property>
+         <obj_property name="ObjectShortName">bits_in_frame</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

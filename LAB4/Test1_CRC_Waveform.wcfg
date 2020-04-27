@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="U:/359 Labs/lab4/Test1_CRC_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test1_crc" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group18" type="group">
+      <obj_property name="label">Test_Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test1_crc/p" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">p[5:0]</obj_property>
+         <obj_property name="ObjectShortName">p[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/data_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in</obj_property>
+         <obj_property name="ObjectShortName">data_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/dclk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in</obj_property>
+         <obj_property name="ObjectShortName">dclk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in</obj_property>
+         <obj_property name="ObjectShortName">frame_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/mode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mode</obj_property>
+         <obj_property name="ObjectShortName">mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/data_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out</obj_property>
+         <obj_property name="ObjectShortName">data_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/frame_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_out</obj_property>
+         <obj_property name="ObjectShortName">frame_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/error_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">error_out</obj_property>
+         <obj_property name="ObjectShortName">error_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/crc_output_data_sig" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">crc_output_data_sig[14:0]</obj_property>
+         <obj_property name="ObjectShortName">crc_output_data_sig[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/error_pattern_sig" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">error_pattern_sig[14:0]</obj_property>
+         <obj_property name="ObjectShortName">error_pattern_sig[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/transmit_frame_sig" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">transmit_frame_sig[14:0]</obj_property>
+         <obj_property name="ObjectShortName">transmit_frame_sig[14:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/fcs_length" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">fcs_length</obj_property>
+         <obj_property name="ObjectShortName">fcs_length</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/dclk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_period</obj_property>
+         <obj_property name="ObjectShortName">dclk_period</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group56" type="group">
+      <obj_property name="label">CRC Module</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test1_crc/uut/p" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">p[5:0]</obj_property>
+         <obj_property name="ObjectShortName">p[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/data_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in</obj_property>
+         <obj_property name="ObjectShortName">data_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/dclk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in</obj_property>
+         <obj_property name="ObjectShortName">dclk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in</obj_property>
+         <obj_property name="ObjectShortName">frame_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/data_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out</obj_property>
+         <obj_property name="ObjectShortName">data_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/frame_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_out</obj_property>
+         <obj_property name="ObjectShortName">frame_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/error_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">error_out</obj_property>
+         <obj_property name="ObjectShortName">error_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/mode" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mode</obj_property>
+         <obj_property name="ObjectShortName">mode</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/dclk_in_d1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in_d1</obj_property>
+         <obj_property name="ObjectShortName">dclk_in_d1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/dclk_in_d2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in_d2</obj_property>
+         <obj_property name="ObjectShortName">dclk_in_d2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/data_in_d1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in_d1</obj_property>
+         <obj_property name="ObjectShortName">data_in_d1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/data_in_d2" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in_d2</obj_property>
+         <obj_property name="ObjectShortName">data_in_d2</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/frame_in_d1" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in_d1</obj_property>
+         <obj_property name="ObjectShortName">frame_in_d1</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/c_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">c_reg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">c_reg[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/c_reg_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">c_reg_in</obj_property>
+         <obj_property name="ObjectShortName">c_reg_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/shift_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_enable</obj_property>
+         <obj_property name="ObjectShortName">shift_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/c_reg_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">c_reg_out</obj_property>
+         <obj_property name="ObjectShortName">c_reg_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/c_reg_out_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">c_reg_out_enable</obj_property>
+         <obj_property name="ObjectShortName">c_reg_out_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/data_out_mux" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out_mux</obj_property>
+         <obj_property name="ObjectShortName">data_out_mux</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/reset_fbc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_fbc</obj_property>
+         <obj_property name="ObjectShortName">reset_fbc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/incr_fbc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">incr_fbc</obj_property>
+         <obj_property name="ObjectShortName">incr_fbc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/clr_creg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clr_creg</obj_property>
+         <obj_property name="ObjectShortName">clr_creg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/shift_creg" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_creg</obj_property>
+         <obj_property name="ObjectShortName">shift_creg</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/check_error" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">check_error</obj_property>
+         <obj_property name="ObjectShortName">check_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/enable_error" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable_error</obj_property>
+         <obj_property name="ObjectShortName">enable_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/fbc_eq_fcs_length" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fbc_eq_fcs_length</obj_property>
+         <obj_property name="ObjectShortName">fbc_eq_fcs_length</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/do_mux_sel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">do_mux_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">do_mux_sel[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/next_state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/fcs_bit_ctr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fcs_bit_ctr[5:0]</obj_property>
+         <obj_property name="ObjectShortName">fcs_bit_ctr[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/fbc_clk_en" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">fbc_clk_en</obj_property>
+         <obj_property name="ObjectShortName">fbc_clk_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/fcs_length" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">fcs_length</obj_property>
+         <obj_property name="ObjectShortName">fcs_length</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/mux_sel_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mux_sel_data[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_sel_data[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test1_crc/uut/mux_sel_crc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mux_sel_crc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">mux_sel_crc[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

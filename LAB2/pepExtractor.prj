@@ -1,0 +1,6 @@
+work	"UART.vhd"
+work	"UART_FSM.vhd"
+work	"UART_Rx.vhd"
+work	"UART_Tx.vhd"
+work	"dualUART.vhd"
+work	"real_debounce.vhd"

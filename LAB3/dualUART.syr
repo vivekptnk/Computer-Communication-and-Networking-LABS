@@ -1,0 +1,1160 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: dualUART.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "dualUART.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "dualUART"
+Output Format                      : NGC
+Target Device                      : xc6slx9-2-tqg144
+
+---- Source Options
+Top Module Name                    : dualUART
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\UART_Tx.vhd" into library work
+Parsing entity <UART_Tx>.
+Parsing architecture <Behavioral> of entity <uart_tx>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\UART_Rx.vhd" into library work
+Parsing entity <UART_Rx>.
+Parsing architecture <Behavioral> of entity <uart_rx>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\me.vhd" into library work
+Parsing entity <ManchEncoder>.
+Parsing architecture <Behavioral> of entity <manchencoder>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\md.vhd" into library work
+Parsing entity <ManchDecoder>.
+Parsing architecture <Behavioral> of entity <manchdecoder>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\UART_FSM.vhd" into library work
+Parsing entity <UART_FSM>.
+Parsing architecture <Behavioral> of entity <uart_fsm>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\UART.vhd" into library work
+Parsing entity <UART>.
+Parsing architecture <Behavioral> of entity <uart>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\real_debounce.vhd" into library work
+Parsing entity <debounce>.
+Parsing architecture <Behavioral> of entity <debounce>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\med.vhd" into library work
+Parsing entity <ManchEncDec>.
+Parsing architecture <Behavioral> of entity <manchencdec>.
+Parsing VHDL file "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" into library work
+Parsing entity <dualUART>.
+Parsing architecture <Behavioral> of entity <dualuart>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <dualUART> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <UART> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UART_Tx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UART_Rx> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ManchEncDec> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <ManchEncoder> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\vpattan1\Downloads\lab3\me.vhd" Line 130: sampling_ctr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\vpattan1\Downloads\lab3\me.vhd" Line 147: sampling_ctr should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\vpattan1\Downloads\lab3\me.vhd" Line 156: num_bits_sampled should be on the sensitivity list of the process
+
+Elaborating entity <ManchDecoder> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\vpattan1\Downloads\lab3\md.vhd" Line 216: clkdiv should be on the sensitivity list of the process
+
+Elaborating entity <UART_FSM> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <debounce> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <debounce> (architecture <Behavioral>) with generics from library <work>.
+
+Elaborating entity <debounce> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <dualUART>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd".
+        debounceDELAY = 640000
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 164: Output port <TBE> of the instance <UART_A> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 164: Output port <PE> of the instance <UART_A> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 164: Output port <FE> of the instance <UART_A> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 164: Output port <OE> of the instance <UART_A> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 179: Output port <TBE> of the instance <UART_B> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 179: Output port <PE> of the instance <UART_B> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 179: Output port <FE> of the instance <UART_B> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\vpattan1\Downloads\lab3\dualUART.vhd" line 179: Output port <OE> of the instance <UART_B> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <dualUART> synthesized.
+
+Synthesizing Unit <UART>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\UART.vhd".
+    Set property "buffer_type = bufg" for signal <rClk>.
+    Set property "buffer_type = bufg" for signal <tClk>.
+    Found 1-bit register for signal <rClk>.
+    Found 4-bit register for signal <rClkDiv>.
+    Found 9-bit register for signal <clkDiv>.
+    Found 9-bit adder for signal <clkDiv[8]_GND_5_o_add_1_OUT> created at line 1241.
+    Found 4-bit adder for signal <rClkDiv[3]_GND_5_o_add_4_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  14 D-type flip-flop(s).
+Unit <UART> synthesized.
+
+Synthesizing Unit <UART_Tx>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\UART_Tx.vhd".
+    Found 11-bit register for signal <tdSReg>.
+    Found 2-bit register for signal <txState>.
+    Found 2-bit register for signal <tbeState>.
+    Found 4-bit register for signal <tCtr>.
+    Found finite state machine <FSM_0> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | tClk (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | txidle                                         |
+    | Power Up State     | txidle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <tbeState>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | tbeidle                                        |
+    | Power Up State     | tbeidle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <tCtr[3]_GND_6_o_add_0_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <UART_Tx> synthesized.
+
+Synthesizing Unit <UART_Rx>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\UART_Rx.vhd".
+    Found 1-bit register for signal <FEint>.
+    Found 1-bit register for signal <OEint>.
+    Found 1-bit register for signal <RDAint>.
+    Found 1-bit register for signal <PEint>.
+    Found 8-bit register for signal <rdReg>.
+    Found 10-bit register for signal <rdSReg>.
+    Found 4-bit register for signal <dataCtr>.
+    Found 3-bit register for signal <rxState>.
+    Found 4-bit register for signal <ctr>.
+    Found finite state machine <FSM_2> for signal <rxState>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 5                                              |
+    | Clock              | rClk (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | rxidle                                         |
+    | Power Up State     | rxidle                                         |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <ctr[3]_GND_7_o_add_0_OUT> created at line 1241.
+    Found 4-bit adder for signal <dataCtr[3]_GND_7_o_add_9_OUT> created at line 1241.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_Rx> synthesized.
+
+Synthesizing Unit <ManchEncDec>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\med.vhd".
+    Set property "buffer_type = bufg" for signal <rClk>.
+    Found 1-bit register for signal <rClk>.
+    Found 9-bit register for signal <clkDiv>.
+    Found 9-bit adder for signal <clkDiv[8]_GND_8_o_add_1_OUT> created at line 1241.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  10 D-type flip-flop(s).
+Unit <ManchEncDec> synthesized.
+
+Synthesizing Unit <ManchEncoder>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\me.vhd".
+    Found 3-bit register for signal <state>.
+    Found 5-bit register for signal <manchester_timer>.
+    Found 1-bit register for signal <manclk>.
+    Found 1-bit register for signal <manclk_sync>.
+    Found 5-bit register for signal <sampling_ctr>.
+    Found 4-bit register for signal <num_bits_sampled>.
+    Found 1-bit register for signal <nrz_hold_reg>.
+    Found 1-bit register for signal <nrz_sync_reg>.
+    Found 1-bit register for signal <manout>.
+    Found finite state machine <FSM_3> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 5-bit adder for signal <manchester_timer[4]_GND_9_o_add_17_OUT> created at line 183.
+    Found 5-bit adder for signal <sampling_ctr[4]_GND_9_o_add_22_OUT> created at line 232.
+    Found 4-bit adder for signal <num_bits_sampled[3]_GND_9_o_add_27_OUT> created at line 248.
+    Found 5-bit comparator equal for signal <GND_9_o_sampling_ctr[4]_equal_7_o> created at line 156
+    Found 5-bit comparator lessequal for signal <n0016> created at line 195
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred  19 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ManchEncoder> synthesized.
+
+Synthesizing Unit <ManchDecoder>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\md.vhd".
+    Found 1-bit register for signal <manin_d1>.
+    Found 6-bit register for signal <clkdiv>.
+    Found 1-bit register for signal <manin_s14>.
+    Found 1-bit register for signal <manin_s34>.
+    Found 2-bit register for signal <state>.
+    Found 1-bit register for signal <nrz_out_reg>.
+    Found 4-bit register for signal <bit_counter>.
+    Found 1-bit register for signal <manin_d2>.
+    Found finite state machine <FSM_4> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 4                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | wait_for_s14_1                                 |
+    | Power Up State     | wait_for_s14_1                                 |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 6-bit adder for signal <clkdiv[5]_GND_10_o_add_3_OUT> created at line 141.
+    Found 4-bit adder for signal <bit_counter[3]_GND_10_o_add_22_OUT> created at line 263.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  15 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ManchDecoder> synthesized.
+
+Synthesizing Unit <UART_FSM>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\UART_FSM.vhd".
+    Found 2-bit register for signal <stCur>.
+    Found finite state machine <FSM_5> for signal <stCur>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | strx                                           |
+    | Power Up State     | strx                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <UART_FSM> synthesized.
+
+Synthesizing Unit <debounce_1>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\real_debounce.vhd".
+        DELAY = 640000
+        WIDTH = 208
+    Found 8-bit register for signal <timer2>.
+    Found 3-bit register for signal <state>.
+    Found 20-bit register for signal <timer>.
+    Found finite state machine <FSM_6> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit subtractor for signal <GND_12_o_GND_12_o_sub_1_OUT<19:0>> created at line 60.
+    Found 8-bit subtractor for signal <GND_12_o_GND_12_o_sub_5_OUT<7:0>> created at line 73.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce_1> synthesized.
+
+Synthesizing Unit <debounce_2>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\real_debounce.vhd".
+        DELAY = 640000
+        WIDTH = 1
+    Found 1-bit register for signal <timer2>.
+    Found 3-bit register for signal <state>.
+    Found 20-bit register for signal <timer>.
+    Found finite state machine <FSM_7> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit subtractor for signal <n0030> created at line 73.
+    Found 20-bit subtractor for signal <GND_13_o_GND_13_o_sub_1_OUT<19:0>> created at line 60.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce_2> synthesized.
+
+Synthesizing Unit <debounce_3>.
+    Related source file is "C:\Users\vpattan1\Downloads\lab3\real_debounce.vhd".
+        DELAY = 1
+        WIDTH = 1
+    Found 1-bit register for signal <timer2>.
+    Found 3-bit register for signal <state>.
+    Found 1-bit register for signal <timer>.
+    Found finite state machine <FSM_8> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | s1                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 2-bit subtractor for signal <n0026> created at line 60.
+    Found 2-bit subtractor for signal <n0027> created at line 73.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Finite State Machine(s).
+Unit <debounce_3> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 28
+ 2-bit subtractor                                      : 3
+ 20-bit subtractor                                     : 2
+ 4-bit adder                                           : 12
+ 5-bit adder                                           : 4
+ 6-bit adder                                           : 2
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 4
+# Registers                                            : 66
+ 1-bit register                                        : 35
+ 10-bit register                                       : 2
+ 11-bit register                                       : 2
+ 20-bit register                                       : 2
+ 4-bit register                                        : 12
+ 5-bit register                                        : 4
+ 6-bit register                                        : 2
+ 8-bit register                                        : 3
+ 9-bit register                                        : 4
+# Comparators                                          : 4
+ 5-bit comparator equal                                : 2
+ 5-bit comparator lessequal                            : 2
+# Multiplexers                                         : 23
+ 1-bit 2-to-1 multiplexer                              : 16
+ 11-bit 2-to-1 multiplexer                             : 2
+ 20-bit 2-to-1 multiplexer                             : 2
+ 6-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 15
+# Xors                                                 : 6
+ 1-bit xor2                                            : 2
+ 1-bit xor8                                            : 2
+ 1-bit xor9                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <ManchDecoder>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+The following registers are absorbed into counter <bit_counter>: 1 register on signal <bit_counter>.
+Unit <ManchDecoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ManchEncDec>.
+The following registers are absorbed into counter <clkDiv>: 1 register on signal <clkDiv>.
+Unit <ManchEncDec> synthesized (advanced).
+
+Synthesizing (advanced) Unit <ManchEncoder>.
+The following registers are absorbed into counter <manchester_timer>: 1 register on signal <manchester_timer>.
+The following registers are absorbed into counter <sampling_ctr>: 1 register on signal <sampling_ctr>.
+The following registers are absorbed into counter <num_bits_sampled>: 1 register on signal <num_bits_sampled>.
+Unit <ManchEncoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART>.
+The following registers are absorbed into counter <clkDiv>: 1 register on signal <clkDiv>.
+The following registers are absorbed into counter <rClkDiv>: 1 register on signal <rClkDiv>.
+Unit <UART> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_Rx>.
+The following registers are absorbed into counter <ctr>: 1 register on signal <ctr>.
+The following registers are absorbed into counter <dataCtr>: 1 register on signal <dataCtr>.
+Unit <UART_Rx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_Tx>.
+The following registers are absorbed into counter <tCtr>: 1 register on signal <tCtr>.
+Unit <UART_Tx> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce_1>.
+The following registers are absorbed into counter <timer2>: 1 register on signal <timer2>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+Unit <debounce_1> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce_2>.
+The following registers are absorbed into counter <timer>: 1 register on signal <timer>.
+The following registers are absorbed into counter <timer2_0>: 1 register on signal <timer2_0>.
+Unit <debounce_2> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce_3>.
+The following registers are absorbed into counter <timer2_0>: 1 register on signal <timer2_0>.
+The following registers are absorbed into counter <timer_0>: 1 register on signal <timer_0>.
+Unit <debounce_3> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 28
+ 1-bit down counter                                    : 3
+ 20-bit down counter                                   : 2
+ 4-bit up counter                                      : 12
+ 5-bit up counter                                      : 4
+ 6-bit up counter                                      : 2
+ 8-bit down counter                                    : 1
+ 9-bit up counter                                      : 4
+# Registers                                            : 90
+ Flip-Flops                                            : 90
+# Comparators                                          : 4
+ 5-bit comparator equal                                : 2
+ 5-bit comparator lessequal                            : 2
+# Multiplexers                                         : 16
+ 1-bit 2-to-1 multiplexer                              : 14
+ 11-bit 2-to-1 multiplexer                             : 2
+# FSMs                                                 : 15
+# Xors                                                 : 6
+ 1-bit xor2                                            : 2
+ 1-bit xor8                                            : 2
+ 1-bit xor9                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_6> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 000
+ s2    | 001
+ s3    | 011
+ s4    | 010
+ s5    | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_7> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 000
+ s2    | 001
+ s3    | 011
+ s4    | 010
+ s5    | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_8> on signal <state[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ s1    | 000
+ s2    | 001
+ s3    | 011
+ s4    | 010
+ s5    | 110
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_5> on signal <stCur[1:2]> with user encoding.
+Optimizing FSM <FSM_5> on signal <stCur[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ strx    | 00
+ strxack | 01
+ sttx    | 10
+ strxtx  | 11
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART_B/Inst_UART_Tx/FSM_0> on signal <txState[1:2]> with user encoding.
+Optimizing FSM <UART_A/Inst_UART_Tx/FSM_0> on signal <txState[1:2]> with user encoding.
+------------------------
+ State      | Encoding
+------------------------
+ txidle     | 00
+ txtransfer | 01
+ txshift    | 10
+------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART_B/Inst_UART_Tx/FSM_1> on signal <tbeState[1:2]> with gray encoding.
+Optimizing FSM <UART_A/Inst_UART_Tx/FSM_1> on signal <tbeState[1:2]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ tbeidle      | 00
+ tberesettbe  | 01
+ tbewaitload  | 11
+ tbewaitwrite | 10
+--------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART_B/Inst_UART_Rx/FSM_2> on signal <rxState[1:3]> with user encoding.
+Optimizing FSM <UART_A/Inst_UART_Rx/FSM_2> on signal <rxState[1:3]> with user encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ rxidle       | 000
+ rxeightdelay | 001
+ rxgetdata    | 010
+ rxshift      | 011
+ rxcheckstop  | 100
+--------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <MED_B/ManEncoder/FSM_3> on signal <state[1:3]> with gray encoding.
+Optimizing FSM <MED_A/ManEncoder/FSM_3> on signal <state[1:3]> with gray encoding.
+------------------------------
+ State            | Encoding
+------------------------------
+ init             | 000
+ start_bit_detect | 001
+ wait_to_sample   | 011
+ sample_nrz       | 010
+ wait_eob         | 110
+ end_of_bit       | 111
+ wait_for_sync    | 101
+------------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <MED_B/ManDecoder/FSM_4> on signal <state[1:2]> with user encoding.
+Optimizing FSM <MED_A/ManDecoder/FSM_4> on signal <state[1:2]> with user encoding.
+----------------------------
+ State          | Encoding
+----------------------------
+ wait_for_s14_1 | 00
+ wait_for_s34_0 | 01
+ start_bit_det  | 10
+----------------------------
+
+Optimizing unit <dualUART> ...
+
+Optimizing unit <UART_Tx> ...
+
+Optimizing unit <UART_Rx> ...
+
+Optimizing unit <ManchEncoder> ...
+
+Optimizing unit <ManchDecoder> ...
+WARNING:Xst:2677 - Node <UART_A/Inst_UART_Rx/OEint> of sequential type is unconnected in block <dualUART>.
+WARNING:Xst:2677 - Node <UART_A/Inst_UART_Rx/PEint> of sequential type is unconnected in block <dualUART>.
+WARNING:Xst:2677 - Node <UART_B/Inst_UART_Rx/OEint> of sequential type is unconnected in block <dualUART>.
+WARNING:Xst:2677 - Node <UART_B/Inst_UART_Rx/PEint> of sequential type is unconnected in block <dualUART>.
+WARNING:Xst:1293 - FF/Latch <UART_B/clkDiv_7> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UART_B/clkDiv_8> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UART_A/clkDiv_7> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UART_A/clkDiv_8> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MED_B/clkDiv_7> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MED_B/clkDiv_8> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MED_A/clkDiv_7> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <MED_A/clkDiv_8> has a constant value of 0 in block <dualUART>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <MED_B/rClk> in Unit <dualUART> is equivalent to the following FF/Latch, which will be removed : <MED_A/rClk> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_0> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_0> <MED_B/clkDiv_0> <MED_A/clkDiv_0> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_1> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_1> <MED_B/clkDiv_1> <MED_A/clkDiv_1> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_2> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_2> <MED_B/clkDiv_2> <MED_A/clkDiv_2> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_3> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_3> <MED_B/clkDiv_3> <MED_A/clkDiv_3> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_4> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_4> <MED_B/clkDiv_4> <MED_A/clkDiv_4> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_5> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_5> <MED_B/clkDiv_5> <MED_A/clkDiv_5> 
+INFO:Xst:2261 - The FF/Latch <UART_B/clkDiv_6> in Unit <dualUART> is equivalent to the following 3 FFs/Latches, which will be removed : <UART_A/clkDiv_6> <MED_B/clkDiv_6> <MED_A/clkDiv_6> 
+INFO:Xst:2261 - The FF/Latch <UART_B/rClk> in Unit <dualUART> is equivalent to the following FF/Latch, which will be removed : <UART_A/rClk> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block dualUART, actual ratio is 7.
+FlipFlop RST_debounce/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop RST_debounce/state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop RST_debounce/state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop XMT_A_debounce/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop XMT_A_debounce/state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop XMT_A_debounce/state_FSM_FFd3 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <dualUART> :
+	Found 2-bit shift register for signal <UART_A/Inst_UART_Rx/rdSReg_7>.
+	Found 2-bit shift register for signal <UART_B/Inst_UART_Rx/rdSReg_7>.
+Unit <dualUART> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 265
+ Flip-Flops                                            : 265
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : dualUART.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 435
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 6
+#      LUT2                        : 46
+#      LUT3                        : 38
+#      LUT4                        : 93
+#      LUT5                        : 40
+#      LUT6                        : 90
+#      MUXCY                       : 51
+#      MUXF7                       : 3
+#      VCC                         : 1
+#      XORCY                       : 55
+# FlipFlops/Latches                : 267
+#      FD                          : 117
+#      FDC                         : 10
+#      FDCE                        : 4
+#      FDE                         : 66
+#      FDR                         : 32
+#      FDRE                        : 34
+#      FDS                         : 4
+# Shift Registers                  : 2
+#      SRLC16E                     : 2
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 24
+#      IBUF                        : 12
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             267  out of  11440     2%  
+ Number of Slice LUTs:                  326  out of   5720     5%  
+    Number used as Logic:               324  out of   5720     5%  
+    Number used as Memory:                2  out of   1440     0%  
+       Number used as SRL:                2
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    358
+   Number with an unused Flip Flop:      91  out of    358    25%  
+   Number with an unused LUT:            32  out of    358     8%  
+   Number of fully used LUT-FF pairs:   235  out of    358    65%  
+   Number of unique control sets:        26
+
+IO Utilization: 
+ Number of IOs:                          25
+ Number of bonded IOBs:                  25  out of    102    24%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                5  out of     16    31%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 87    |
+UART_B/rClk                        | BUFG                   | 70    |
+UART_A/rClkDiv_3                   | BUFG                   | 17    |
+UART_B/rClkDiv_3                   | BUFG                   | 17    |
+MED_B/rClk                         | BUFG                   | 78    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 3.867ns (Maximum Frequency: 258.598MHz)
+   Minimum input arrival time before clock: 5.046ns
+   Maximum output required time after clock: 4.380ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 3.867ns (frequency: 258.598MHz)
+  Total number of paths / destination ports: 2503 / 139
+-------------------------------------------------------------------------
+Delay:               3.867ns (Levels of Logic = 3)
+  Source:            UART_B/clkDiv_3 (FF)
+  Destination:       UART_B/clkDiv_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: UART_B/clkDiv_3 to UART_B/clkDiv_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   0.874  UART_B/clkDiv_3 (UART_B/clkDiv_3)
+     LUT2:I0->O            2   0.250   0.726  UART_B/clkDiv_eq_baudDivide<8>_SW0 (N11)
+     LUT6:I5->O            7   0.254   0.910  UART_B/clkDiv_eq_baudDivide<8> (UART_B/clkDiv_eq_baudDivide)
+     LUT2:I1->O            1   0.254   0.000  UART_B/clkDiv_0_rstpot (UART_B/clkDiv_0_rstpot)
+     FD:D                      0.074          UART_B/clkDiv_0
+    ----------------------------------------
+    Total                      3.867ns (1.357ns logic, 2.510ns route)
+                                       (35.1% logic, 64.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_B/rClk'
+  Clock period: 3.321ns (frequency: 301.114MHz)
+  Total number of paths / destination ports: 340 / 106
+-------------------------------------------------------------------------
+Delay:               3.321ns (Levels of Logic = 2)
+  Source:            UART_A/Inst_UART_Rx/ctr_2 (FF)
+  Destination:       UART_A/Inst_UART_Rx/dataCtr_3 (FF)
+  Source Clock:      UART_B/rClk rising
+  Destination Clock: UART_B/rClk rising
+
+  Data Path: UART_A/Inst_UART_Rx/ctr_2 to UART_A/Inst_UART_Rx/dataCtr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               6   0.525   1.306  UART_A/Inst_UART_Rx/ctr_2 (UART_A/Inst_UART_Rx/ctr_2)
+     LUT6:I1->O            4   0.254   0.912  UART_A/Inst_UART_Rx/Mmux_dataRST11 (UART_A/Inst_UART_Rx/dataRST)
+     LUT6:I4->O            1   0.250   0.000  UART_A/Inst_UART_Rx/dataCtr_3_rstpot (UART_A/Inst_UART_Rx/dataCtr_3_rstpot)
+     FD:D                      0.074          UART_A/Inst_UART_Rx/dataCtr_3
+    ----------------------------------------
+    Total                      3.321ns (1.103ns logic, 2.218ns route)
+                                       (33.2% logic, 66.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_A/rClkDiv_3'
+  Clock period: 2.544ns (frequency: 393.082MHz)
+  Total number of paths / destination ports: 65 / 21
+-------------------------------------------------------------------------
+Delay:               2.544ns (Levels of Logic = 1)
+  Source:            UART_A/Inst_UART_Tx/txState_FSM_FFd2 (FF)
+  Destination:       UART_A/Inst_UART_Tx/tdSReg_8 (FF)
+  Source Clock:      UART_A/rClkDiv_3 rising
+  Destination Clock: UART_A/rClkDiv_3 rising
+
+  Data Path: UART_A/Inst_UART_Tx/txState_FSM_FFd2 to UART_A/Inst_UART_Tx/tdSReg_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.525   1.691  UART_A/Inst_UART_Tx/txState_FSM_FFd2 (UART_A/Inst_UART_Tx/txState_FSM_FFd2)
+     LUT6:I1->O            1   0.254   0.000  UART_A/Inst_UART_Tx/tdSReg_8_glue_rst (UART_A/Inst_UART_Tx/tdSReg_8_glue_rst)
+     FD:D                      0.074          UART_A/Inst_UART_Tx/tdSReg_8
+    ----------------------------------------
+    Total                      2.544ns (0.853ns logic, 1.691ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART_B/rClkDiv_3'
+  Clock period: 2.544ns (frequency: 393.082MHz)
+  Total number of paths / destination ports: 65 / 21
+-------------------------------------------------------------------------
+Delay:               2.544ns (Levels of Logic = 1)
+  Source:            UART_B/Inst_UART_Tx/txState_FSM_FFd2 (FF)
+  Destination:       UART_B/Inst_UART_Tx/tdSReg_9 (FF)
+  Source Clock:      UART_B/rClkDiv_3 rising
+  Destination Clock: UART_B/rClkDiv_3 rising
+
+  Data Path: UART_B/Inst_UART_Tx/txState_FSM_FFd2 to UART_B/Inst_UART_Tx/tdSReg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             19   0.525   1.691  UART_B/Inst_UART_Tx/txState_FSM_FFd2 (UART_B/Inst_UART_Tx/txState_FSM_FFd2)
+     LUT6:I1->O            1   0.254   0.000  UART_B/Inst_UART_Tx/tdSReg_8_glue_rst (UART_B/Inst_UART_Tx/tdSReg_8_glue_rst)
+     FD:D                      0.074          UART_B/Inst_UART_Tx/tdSReg_8
+    ----------------------------------------
+    Total                      2.544ns (0.853ns logic, 1.691ns route)
+                                       (33.5% logic, 66.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MED_B/rClk'
+  Clock period: 3.332ns (frequency: 300.120MHz)
+  Total number of paths / destination ports: 616 / 112
+-------------------------------------------------------------------------
+Delay:               3.332ns (Levels of Logic = 1)
+  Source:            MED_A/ManEncoder/state_FSM_FFd3 (FF)
+  Destination:       MED_A/ManEncoder/sampling_ctr_4 (FF)
+  Source Clock:      MED_B/rClk rising
+  Destination Clock: MED_B/rClk rising
+
+  Data Path: MED_A/ManEncoder/state_FSM_FFd3 to MED_A/ManEncoder/sampling_ctr_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              7   0.525   1.138  MED_A/ManEncoder/state_FSM_FFd3 (MED_A/ManEncoder/state_FSM_FFd3)
+     LUT4:I1->O            9   0.235   0.975  MED_A/ManEncoder/rst_clr_sampling_ctr_OR_22_o1 (MED_A/ManEncoder/rst_clr_sampling_ctr_OR_22_o)
+     FDRE:R                    0.459          MED_A/ManEncoder/num_bits_sampled_0
+    ----------------------------------------
+    Total                      3.332ns (1.219ns logic, 2.113ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 20 / 16
+-------------------------------------------------------------------------
+Offset:              4.776ns (Levels of Logic = 3)
+  Source:            RST (PAD)
+  Destination:       RST_debounce/state_FSM_FFd2 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: RST to RST_debounce/state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.328   2.184  RST_IBUF (RST_IBUF)
+     LUT5:I0->O            1   0.254   0.682  RST_debounce/timer_eq_0<19>4_SW3 (N53)
+     LUT6:I5->O            3   0.254   0.000  RST_debounce/state_FSM_FFd2-In1 (RST_debounce/state_FSM_FFd2-In)
+     FD:D                      0.074          RST_debounce/state_FSM_FFd2
+    ----------------------------------------
+    Total                      4.776ns (1.910ns logic, 2.866ns route)
+                                       (40.0% logic, 60.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MED_B/rClk'
+  Total number of paths / destination ports: 60 / 60
+-------------------------------------------------------------------------
+Offset:              5.046ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       MED_A/ManEncoder/sampling_ctr_4 (FF)
+  Destination Clock: MED_B/rClk rising
+
+  Data Path: RST to MED_A/ManEncoder/sampling_ctr_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            46   1.328   2.030  RST_IBUF (RST_IBUF)
+     LUT4:I0->O            9   0.254   0.975  MED_A/ManEncoder/rst_clr_sampling_ctr_OR_22_o1 (MED_A/ManEncoder/rst_clr_sampling_ctr_OR_22_o)
+     FDRE:R                    0.459          MED_A/ManEncoder/num_bits_sampled_0
+    ----------------------------------------
+    Total                      5.046ns (2.041ns logic, 3.005ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART_A/rClkDiv_3'
+  Total number of paths / destination ports: 16 / 9
+-------------------------------------------------------------------------
+Offset:              3.923ns (Levels of Logic = 4)
+  Source:            SW<4> (PAD)
+  Destination:       UART_A/Inst_UART_Tx/tdSReg_9 (FF)
+  Destination Clock: UART_A/rClkDiv_3 rising
+
+  Data Path: SW<4> to UART_A/Inst_UART_Tx/tdSReg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.328   1.156  SW_4_IBUF (SW_4_IBUF)
+     LUT5:I0->O            1   0.254   0.682  UART_A/Inst_UART_Tx/Mmux_tdSReg[10]_PWR_6_o_mux_4_OUT10_SW0 (N17)
+     LUT6:I5->O            1   0.254   0.000  UART_A/Inst_UART_Tx/tdSReg_9_glue_rst_G (N132)
+     MUXF7:I1->O           1   0.175   0.000  UART_A/Inst_UART_Tx/tdSReg_9_glue_rst (UART_A/Inst_UART_Tx/tdSReg_9_glue_rst)
+     FD:D                      0.074          UART_A/Inst_UART_Tx/tdSReg_9
+    ----------------------------------------
+    Total                      3.923ns (2.085ns logic, 1.838ns route)
+                                       (53.1% logic, 46.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_B/rClk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            UART_A/Inst_UART_Rx/rdReg_7 (FF)
+  Destination:       LED<7> (PAD)
+  Source Clock:      UART_B/rClk rising
+
+  Data Path: UART_A/Inst_UART_Rx/rdReg_7 to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.525   0.681  UART_A/Inst_UART_Rx/rdReg_7 (UART_A/Inst_UART_Rx/rdReg_7)
+     OBUF:I->O                 2.912          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MED_B/rClk'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              4.380ns (Levels of Logic = 1)
+  Source:            MED_A/ManDecoder/nrz_out_reg (FF)
+  Destination:       RXD_A_NRZ (PAD)
+  Source Clock:      MED_B/rClk rising
+
+  Data Path: MED_A/ManDecoder/nrz_out_reg to RXD_A_NRZ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.525   0.943  MED_A/ManDecoder/nrz_out_reg (MED_A/ManDecoder/nrz_out_reg)
+     OBUF:I->O                 2.912          RXD_A_NRZ_OBUF (RXD_A_NRZ)
+    ----------------------------------------
+    Total                      4.380ns (3.437ns logic, 0.943ns route)
+                                       (78.5% logic, 21.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART_A/rClkDiv_3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.240ns (Levels of Logic = 1)
+  Source:            UART_A/Inst_UART_Tx/tdSReg_0 (FF)
+  Destination:       TXD_A_NRZ (PAD)
+  Source Clock:      UART_A/rClkDiv_3 rising
+
+  Data Path: UART_A/Inst_UART_Tx/tdSReg_0 to TXD_A_NRZ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              4   0.525   0.803  UART_A/Inst_UART_Tx/tdSReg_0 (UART_A/Inst_UART_Tx/tdSReg_0)
+     OBUF:I->O                 2.912          TXD_A_NRZ_OBUF (TXD_A_NRZ)
+    ----------------------------------------
+    Total                      4.240ns (3.437ns logic, 0.803ns route)
+                                       (81.1% logic, 18.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+CLK             |    3.867|         |         |         |
+UART_A/rClkDiv_3|    3.505|         |         |         |
+UART_B/rClk     |    2.124|         |         |         |
+UART_B/rClkDiv_3|    3.505|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock MED_B/rClk
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+MED_B/rClk      |    3.332|         |         |         |
+UART_A/rClkDiv_3|    2.112|         |         |         |
+UART_B/rClkDiv_3|    2.074|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_A/rClkDiv_3
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+CLK             |    4.346|         |         |         |
+UART_A/rClkDiv_3|    2.544|         |         |         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_B/rClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.021|         |         |         |
+MED_B/rClk     |    3.188|         |         |         |
+UART_B/rClk    |    3.321|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART_B/rClkDiv_3
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+CLK             |    4.346|         |         |         |
+UART_B/rClk     |    3.881|         |         |         |
+UART_B/rClkDiv_3|    2.544|         |         |         |
+----------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.86 secs
+ 
+--> 
+
+Total memory usage is 4510620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :   17 (   0 filtered)
+

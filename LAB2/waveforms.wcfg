@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/ise_projects/lab2/Test_dualUART_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_dualuart" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="group11" type="group">
+      <obj_property name="label">TEST BENCH</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rxd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_a</obj_property>
+         <obj_property name="ObjectShortName">rxd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/rxd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_b</obj_property>
+         <obj_property name="ObjectShortName">rxd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/xmt_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xmt_a</obj_property>
+         <obj_property name="ObjectShortName">xmt_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/sw" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sw[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/txd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_a</obj_property>
+         <obj_property name="ObjectShortName">txd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/txd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_b</obj_property>
+         <obj_property name="ObjectShortName">txd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/led" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">led[7:0]</obj_property>
+         <obj_property name="ObjectShortName">led[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">dualUART</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/uut/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rxd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_a</obj_property>
+         <obj_property name="ObjectShortName">rxd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rxd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rxd_b</obj_property>
+         <obj_property name="ObjectShortName">rxd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/xmt_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xmt_a</obj_property>
+         <obj_property name="ObjectShortName">xmt_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/sw" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">sw[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/txd_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_a</obj_property>
+         <obj_property name="ObjectShortName">txd_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/txd_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">txd_b</obj_property>
+         <obj_property name="ObjectShortName">txd_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/led" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">led[7:0]</obj_property>
+         <obj_property name="ObjectShortName">led[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dbinsig_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbinsig_a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbinsig_a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dbinsig_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dbinsig_b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dbinsig_b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dboutsig_a" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dboutsig_a[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dboutsig_a[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dboutsig_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dboutsig_b[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dboutsig_b[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rdasig_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdasig_a</obj_property>
+         <obj_property name="ObjectShortName">rdasig_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rdasig_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdasig_b</obj_property>
+         <obj_property name="ObjectShortName">rdasig_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rdsig_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdsig_a</obj_property>
+         <obj_property name="ObjectShortName">rdsig_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/wrsig_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wrsig_a</obj_property>
+         <obj_property name="ObjectShortName">wrsig_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/rdsig_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rdsig_b</obj_property>
+         <obj_property name="ObjectShortName">rdsig_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/wrsig_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wrsig_b</obj_property>
+         <obj_property name="ObjectShortName">wrsig_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/drst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">drst</obj_property>
+         <obj_property name="ObjectShortName">drst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dxmt_a" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dxmt_a</obj_property>
+         <obj_property name="ObjectShortName">dxmt_a</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/dxmt_b" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dxmt_b</obj_property>
+         <obj_property name="ObjectShortName">dxmt_b</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/debouncedelay" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">debouncedelay</obj_property>
+         <obj_property name="ObjectShortName">debouncedelay</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group44" type="group">
+      <obj_property name="label">UART_A_FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/xmt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xmt</obj_property>
+         <obj_property name="ObjectShortName">xmt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/rda" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rda</obj_property>
+         <obj_property name="ObjectShortName">rda</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/rd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd</obj_property>
+         <obj_property name="ObjectShortName">rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr</obj_property>
+         <obj_property name="ObjectShortName">wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/stcur" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">stcur</obj_property>
+         <obj_property name="ObjectShortName">stcur</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_A_FSM/stnext" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">stnext</obj_property>
+         <obj_property name="ObjectShortName">stnext</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">UART_B_FSM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/xmt" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">xmt</obj_property>
+         <obj_property name="ObjectShortName">xmt</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/rda" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rda</obj_property>
+         <obj_property name="ObjectShortName">rda</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/rd" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rd</obj_property>
+         <obj_property name="ObjectShortName">rd</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/wr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">wr</obj_property>
+         <obj_property name="ObjectShortName">wr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/stcur" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">stcur</obj_property>
+         <obj_property name="ObjectShortName">stcur</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_dualuart/uut/UART_B_FSM/stnext" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">stnext</obj_property>
+         <obj_property name="ObjectShortName">stnext</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

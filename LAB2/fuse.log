@@ -1,0 +1,34 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o /home/ise/ise_projects/lab2/Test_dualUART_isim_beh.exe -prj /home/ise/ise_projects/lab2/Test_dualUART_beh.prj work.Test_dualUART 
+ISim P.20160913 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 1
+Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/ise/ise_projects/lab2/UART_Tx.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/UART_Rx.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/UART_FSM.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/UART.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/real_debounce.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/dualUART.vhd" into library work
+Parsing VHDL file "/home/ise/ise_projects/lab2/Test_dualUART.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97272 KB
+Fuse CPU Usage: 980 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling architecture behavioral of entity UART_Tx [uart_tx_default]
+Compiling architecture behavioral of entity UART_Rx [uart_rx_default]
+Compiling architecture behavioral of entity UART [uart_default]
+Compiling architecture behavioral of entity UART_FSM [uart_fsm_default]
+Compiling architecture behavioral of entity debounce [\debounce(3,208)\]
+Compiling architecture behavioral of entity debounce [\debounce(3,1)\]
+Compiling architecture behavioral of entity debounce [\debounce(1,1)\]
+Compiling architecture behavioral of entity dualUART [\dualUART(3)\]
+Compiling architecture behavior of entity test_dualuart
+Time Resolution for simulation is 1ps.
+Compiled 20 VHDL Units
+Built simulation executable /home/ise/ise_projects/lab2/Test_dualUART_isim_beh.exe
+Fuse Memory Usage: 112068 KB
+Fuse CPU Usage: 1190 ms
+GCC CPU Usage: 550 ms

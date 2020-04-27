@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/vpattan1/Desktop/lab5/TestRandBitGen_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="testrandbitgen" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group19" type="group">
+      <obj_property name="label">Test Bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testrandbitgen/size" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">size</obj_property>
+         <obj_property name="ObjectShortName">size</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/p" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">p[4:1]</obj_property>
+         <obj_property name="ObjectShortName">p[4:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/seed" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">seed[4:1]</obj_property>
+         <obj_property name="ObjectShortName">seed[4:1]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in</obj_property>
+         <obj_property name="ObjectShortName">frame_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/dclk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in</obj_property>
+         <obj_property name="ObjectShortName">dclk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/data_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out</obj_property>
+         <obj_property name="ObjectShortName">data_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/frame_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_out</obj_property>
+         <obj_property name="ObjectShortName">frame_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/test_number" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">test_number</obj_property>
+         <obj_property name="ObjectShortName">test_number</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/largest_size" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">largest_size</obj_property>
+         <obj_property name="ObjectShortName">largest_size</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/dclk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_period</obj_property>
+         <obj_property name="ObjectShortName">dclk_period</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group38" type="group">
+      <obj_property name="label">RBG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/testrandbitgen/uut/shift_reg_f" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_reg_f[4:1]</obj_property>
+         <obj_property name="ObjectShortName">shift_reg_f[4:1]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/testrandbitgen/uut/shift_ctr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_ctr[4:0]</obj_property>
+         <obj_property name="ObjectShortName">shift_ctr[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="group51" type="group">
+         <obj_property name="label">RBG_signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/testrandbitgen/uut/p" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">p[4:1]</obj_property>
+            <obj_property name="ObjectShortName">p[4:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/seed" type="array" db_ref_id="1">
+            <obj_property name="ElementShortName">seed[4:1]</obj_property>
+            <obj_property name="ObjectShortName">seed[4:1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/frame_in" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">frame_in</obj_property>
+            <obj_property name="ObjectShortName">frame_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/dclk_in" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">dclk_in</obj_property>
+            <obj_property name="ObjectShortName">dclk_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/data_out" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">data_out</obj_property>
+            <obj_property name="ObjectShortName">data_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/dclk_out" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">dclk_out</obj_property>
+            <obj_property name="ObjectShortName">dclk_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/frame_out" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">frame_out</obj_property>
+            <obj_property name="ObjectShortName">frame_out</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/clk" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">clk</obj_property>
+            <obj_property name="ObjectShortName">clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/rst" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">rst</obj_property>
+            <obj_property name="ObjectShortName">rst</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/dclk_in_d1" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">dclk_in_d1</obj_property>
+            <obj_property name="ObjectShortName">dclk_in_d1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/dclk_in_d2" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">dclk_in_d2</obj_property>
+            <obj_property name="ObjectShortName">dclk_in_d2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/frame_in_d1" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">frame_in_d1</obj_property>
+            <obj_property name="ObjectShortName">frame_in_d1</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/frame_in_d2" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">frame_in_d2</obj_property>
+            <obj_property name="ObjectShortName">frame_in_d2</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/dclk_fall" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">dclk_fall</obj_property>
+            <obj_property name="ObjectShortName">dclk_fall</obj_property>
+         </wvobject>
+         <wvobject fp_name="/testrandbitgen/uut/size" type="other" db_ref_id="1">
+            <obj_property name="ElementShortName">size</obj_property>
+            <obj_property name="ObjectShortName">size</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

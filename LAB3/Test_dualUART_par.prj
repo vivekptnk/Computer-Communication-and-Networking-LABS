@@ -1,0 +1,2 @@
+vhdl work "netgen/par/dualUART_timesim.vhd"
+vhdl work "Test_dualUART.vhd"
