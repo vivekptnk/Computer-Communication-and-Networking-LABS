@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/ise_projects/lab7/Test_Lab7D_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_lab7d" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group41" type="group">
+      <obj_property name="label">UUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_lab7d/uut/last_llc_data_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">last_llc_data_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">last_llc_data_reg[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/last_mfd_data_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">last_mfd_data_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">last_mfd_data_reg[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group79" type="group">
+      <obj_property name="label">Mac_frame_dec</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/dclk_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_in</obj_property>
+         <obj_property name="ObjectShortName">dclk_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/data_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">data_in</obj_property>
+         <obj_property name="ObjectShortName">data_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_in</obj_property>
+         <obj_property name="ObjectShortName">frame_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/data_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/mac_addr_in" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">mac_addr_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mac_addr_in[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/dest_addr_out" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dest_addr_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">dest_addr_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/crc_error_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">crc_error_out</obj_property>
+         <obj_property name="ObjectShortName">crc_error_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/data_sr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">data_sr[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_sr[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/shift_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">shift_count[2:0]</obj_property>
+         <obj_property name="ObjectShortName">shift_count[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/byte_count" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">byte_count[5:0]</obj_property>
+         <obj_property name="ObjectShortName">byte_count[5:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/pdu_length_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pdu_length_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pdu_length_reg[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/pdu_data_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">pdu_data_reg[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pdu_data_reg[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/en_shift_ctr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_shift_ctr</obj_property>
+         <obj_property name="ObjectShortName">en_shift_ctr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/en_byte_ctr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">en_byte_ctr</obj_property>
+         <obj_property name="ObjectShortName">en_byte_ctr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/load_dest_addr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_dest_addr</obj_property>
+         <obj_property name="ObjectShortName">load_dest_addr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/load_source_addr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_source_addr</obj_property>
+         <obj_property name="ObjectShortName">load_source_addr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/load_pdu_length" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_pdu_length</obj_property>
+         <obj_property name="ObjectShortName">load_pdu_length</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/load_pdu_data" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">load_pdu_data</obj_property>
+         <obj_property name="ObjectShortName">load_pdu_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/ignore_error" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ignore_error</obj_property>
+         <obj_property name="ObjectShortName">ignore_error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7d/uut/MAC_Frame_DecB/crc_frame_in" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">crc_frame_in</obj_property>
+         <obj_property name="ObjectShortName">crc_frame_in</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

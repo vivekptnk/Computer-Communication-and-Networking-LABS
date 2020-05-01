@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/ise_projects/lab7/Test_Lab7C_md_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_lab7c_md" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="group10" type="group">
+      <obj_property name="label">Test_bench</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/test_lab7c_md/rst" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/manin" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">manin</obj_property>
+         <obj_property name="ObjectShortName">manin</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/dclk_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">dclk_out</obj_property>
+         <obj_property name="ObjectShortName">dclk_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/frame_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">frame_out</obj_property>
+         <obj_property name="ObjectShortName">frame_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/nrz_out" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">nrz_out</obj_property>
+         <obj_property name="ObjectShortName">nrz_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/tb_man_clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tb_man_clk</obj_property>
+         <obj_property name="ObjectShortName">tb_man_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/check_nrz" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">check_nrz</obj_property>
+         <obj_property name="ObjectShortName">check_nrz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test_lab7c_md/clk_period" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_period</obj_property>
+         <obj_property name="ObjectShortName">clk_period</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

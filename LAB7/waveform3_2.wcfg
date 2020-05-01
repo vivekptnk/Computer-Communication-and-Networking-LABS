@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/ise/ise_projects/lab7/Test_Lab7C_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="test_lab7c" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/test_lab7c/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/dclk_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dclk_in</obj_property>
+      <obj_property name="ObjectShortName">dclk_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/frame_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_in</obj_property>
+      <obj_property name="ObjectShortName">frame_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/nrz_in" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nrz_in</obj_property>
+      <obj_property name="ObjectShortName">nrz_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/manout" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">manout</obj_property>
+      <obj_property name="ObjectShortName">manout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/manin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">manin</obj_property>
+      <obj_property name="ObjectShortName">manin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/dclk_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dclk_out</obj_property>
+      <obj_property name="ObjectShortName">dclk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/frame_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">frame_out</obj_property>
+      <obj_property name="ObjectShortName">frame_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/nrz_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">nrz_out</obj_property>
+      <obj_property name="ObjectShortName">nrz_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_lab7c/data_byte" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_byte[7:0]</obj_property>
+   </wvobject>
+</wave_config>

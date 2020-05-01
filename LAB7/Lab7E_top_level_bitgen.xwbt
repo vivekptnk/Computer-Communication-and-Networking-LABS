@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ise/ise_projects/lab7/Lab7E_top_level.ncd
+OUTFILE=/home/ise/ise_projects/lab7/Lab7E_top_level.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=/home/ise/ise_projects/lab7
+LICENSE=ISE
+USER_INFO=8416_11442_1478797146_620
